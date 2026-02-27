@@ -7,7 +7,13 @@ spring:
     password: '@Khashi51000'
   jpa:
     show-sql: true
-
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  jwt:
+    secret: ${JWT_SECRET}
 logging:
   level:
     root: debug
+
+
